@@ -5,7 +5,7 @@ module.exports = function check(str, bracketsConfig) {
     while (strLength !== strNewLength) {
         strLength = str.length;
         for (let i = 0; i < strings.length; i++) {
-            str = str.replaceAll(strings[i], '');
+            str = str.replace(strings[i], '');
         }
         strNewLength = str.length;
     }
